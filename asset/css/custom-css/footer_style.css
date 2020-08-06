@@ -1,0 +1,170 @@
+
+@keyframes rotate-icon{
+
+0%{
+}
+25%{
+}
+50%{
+}
+75%{
+}
+100%{
+transform:rotate(-360deg);
+}
+}
+
+.footer{
+background:linear-gradient(to left, #1f282d, #131a1d);
+border-radius: 150px  0 0 0  ;
+padding-left:0px;
+border-right:20px solid   #52bbe8;
+color:#aca4c7;
+}
+.footer-logo{
+width:150px;
+height:150px;
+opacity:.8;
+}
+.social-icon-group{
+
+}
+
+.btn-social-icon{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  background:transparent;
+  border: 1px solid white;
+  border-radius:100%;
+  opacity:0.9;
+  font-size:20px;
+  width:50px;
+  height:50px;
+  margin:20px;
+  outline:none;
+}
+.btn-social-icon:hover{
+  display: inline-block;
+  color: #130d1d;
+  text-align: center;
+  vertical-align: middle;
+  background:white;
+  border: 1px solid white;
+  border-radius:100%;
+  opacity:0.9;
+  transition:1s;
+  font-size:30px;
+  width:50px;
+  height:50px;
+  margin:20px;
+  animation:rotate-icon 1s ;
+}
+.copyright{
+background:black;
+padding-top:3px;
+padding-bottom:3px;
+}
+.copyright h5{
+font-size:12px;
+}
+
+.footer-font{
+border-width:0px 0px 4px 0px ;
+border-color:#aca4c7;
+border-style:solid ;
+border-radius:100px;
+}
+.footer-font h4{
+font-size:19px;
+outline:2px solid #aca4c7;
+padding:5px;
+}
+.footer-font p{
+font-size:15px;
+}
+
+
+/* Media queries */
+
+@media (max-width: 768px) {
+
+
+.footer{
+background:linear-gradient(to left, #1f282d, #131a1d);
+border-radius: 100px  0 0 0  ;
+padding-left:0px;
+border-right:10px solid #52bbe8;
+color:#aca4c7;
+}
+.footer-logo{
+opacity:.8;
+width:90px;
+height:90px;
+}
+.social-icon-group{
+
+}
+
+.btn-social-icon{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  background:transparent;
+  border: 1px solid white;
+  border-radius:100%;
+  opacity:0.9;
+  font-size:20px;
+  width:50px;
+  height:50px;
+  margin:5px;
+  margin-top:20px;
+  outline:none;
+}
+.btn-social-icon:hover{
+  display: inline-block;
+  color: #130d1d;
+  text-align: center;
+  vertical-align: middle;
+  background:white;
+  border: 1px solid white;
+  border-radius:100%;
+  opacity:0.9;
+  transition:1s;
+  font-size:20px;
+  width:50px;
+  height:50px;
+  margin:5px;
+  margin-top:20px;
+  animation:rotate-icon 1s ;
+  outline:none;
+}
+.btn-social-icon:focus{
+  outline:none;
+}
+
+.copyright{
+background:black;
+padding:0;
+}
+.copyright h5{
+font-size:10px;
+}
+
+.footer-font{
+border-width:0px 0px 0px 0px ;
+}
+
+.footer-font h4{
+font-size:16px;
+
+}
+}
+.footer-font p{
+font-size:13px;
+}
+
+
+}

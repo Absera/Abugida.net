@@ -1,0 +1,159 @@
+@keyframes refresh1{
+
+0%{
+padding-right: 0rem;
+padding-left: 0rem;
+}
+100%{
+padding-right: 5rem;
+padding-left: 5rem;
+}
+}
+
+@keyframes refresh2{
+
+0%{
+padding-right: 0rem;
+padding-left: 0rem;
+}
+100%{
+padding-right: 2rem;
+padding-left: 2rem;
+}
+}
+
+
+.navbar{
+background:linear-gradient(to left, #8242ea, #52bbe8);
+opacity:1;
+box-shadow:2px 2px 6px grey;
+padding:0 0 0 0;
+animation:refresh1 2s;
+padding-right: 5rem;
+padding-left: 5rem;
+width:100%;
+z-index:99;
+}
+
+.navbar.scrolled{
+background:linear-gradient(to left, #52bbe8, #8242ea);
+transition:3s;
+}
+
+
+.navItemContainer{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:linear-gradient(to left, #8242ea, #52bbe8);
+    height:100%;
+}
+
+.navItem{
+    height:100%;
+}
+
+.navLink{
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    width:120px;
+}
+
+.navLink.active{
+background-color: #283339;
+}
+
+a.nav-link{
+color:green;
+}
+
+a.navLink:hover {
+background-color: #111;
+}
+
+.search-btn:hover{
+font-weight: bold;
+color:white;
+text-decoration: none;
+}
+
+.navbar-brand h2{
+color:white;
+opacity:0.7;
+}
+
+
+/* Media queries */
+
+@media (max-width: 768px) {
+
+.navbar{
+width:100%;
+background:linear-gradient(to left, #8242ea, #52bbe8);
+opacity:1;
+box-shadow:0px 0px 0px transparent;
+padding:0 0 0 0;
+animation:refresh2 2s;
+padding-right: 2rem;
+padding-left: 2rem;
+}
+.navbar.scrolled{
+background:linear-gradient(to left, #8242ea, #52bbe8);
+transition:3s;
+box-shadow:2px 2px 6px grey;
+}
+
+.navItemContainer{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:linear-gradient(to left, #8242ea, #52bbe8);
+    height:100%;
+}
+
+.navItem{
+    height:100%;
+}
+
+.navLink{
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+
+}
+
+.navLink.active{
+background-color: #283339;
+}
+
+a.nav-link{
+color:green;
+}
+
+a.navLink:hover {
+background-color: #111;
+
+}
+
+
+.navbar-brand{
+padding-left:15px;
+}
+
+.navbar-brand h2{
+color:white;
+opacity:0.7;
+font-size:30px;
+}
+
+
+}
